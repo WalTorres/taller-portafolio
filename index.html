@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="shortcut icon" href="./vite.svg" type="image/x-icon" /> -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <img src="./images/logo.png" width="67" height="20" alt="logo" />
+          <nav aria-label="main-navigation" class="menu">
+            <ul>
+              <li>
+                <a class="is-active" href="#main">Hola</a>
+              </li>
+
+              <li>
+                <a href="#project">Proyectos</a>
+              </li>
+
+              <li>
+                <a href="#contact">Hablemos</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn">Curriculum</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <section aria-label="main" class="hero" id="main">
+        <div class="hero__img">
+          <img src="./images/user.png" width="338" height="330" alt="" />
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span>¡Hola a todos!</span>
+            <span>Soy Jaume</span>
+          </h1>
+          <p>
+            Frontend Developer que le encanta implementar diseños que inspiran y
+            atraen a las personas.
+          </p>
+
+          <div class="social">
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-phone.svg" alt="" />
+            </a>
+
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-mail.svg" alt="" />
+            </a>
+
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-instagram.svg" alt="" />
+            </a>
+
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-twitter.svg" alt="" />
+            </a>
+          </div>
+          <a class="btn" href="#">Descarga curriculum</a>
+        </div>
+      </section>
+
+      <section class="comment">
+        <p>
+          A lo largo de mi carrera como Frontend, he tenido el privilegio de
+          trabajar en proyectos retadores e increíbles
+        </p>
+        <p>Aquí hay algunos que me gustaría compartir.</p>
+        <img class="comment__icon" src="./icons/icon-down.svg" alt="" />
+      </section>
+
+      <div class="project" id="project">
+        <div class="project__img">
+          <img src="./images/leonidas-esteban.png" alt="" />
+        </div>
+
+        <div class="project__content">
+          <a class="title" target="_blank" href="http://leonidasesteban.com"
+            >leonidasesteban.com</a
+          >
+          <p>
+            Accede a más de 120 proyectos que te ayudarán a mejorar tus
+            habilidades como desarrollador Front-End.
+          </p>
+
+          <a target="_blank" class="btn btn--secondary" href="#">Ver Código</a>
+          <a target="_blank" class="btn" href="#">Ver Proyectos</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__img">
+          <img src="./images/marvol.png" alt="" />
+        </div>
+
+        <div class="project__content">
+          <a class="title" target="_blank" href="http://leonidasesteban.com"
+            >leonidasesteban.com</a
+          >
+          <p>
+            Accede a más de 120 proyectos que te ayudarán a mejorar tus
+            habilidades como desarrollador Front-End.
+          </p>
+
+          <a target="_blank" class="btn btn--secondary" href="#">Ver Código</a>
+          <a target="_blank" class="btn" href="#">Ver Proyectos</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__img">
+          <img src="./images/netnet.png" alt="" />
+        </div>
+
+        <div class="project__content">
+          <a class="title" target="_blank" href="http://leonidasesteban.com"
+            >leonidasesteban.com</a
+          >
+          <p>
+            Accede a más de 120 proyectos que te ayudarán a mejorar tus
+            habilidades como desarrollador Front-End.
+          </p>
+
+          <a target="_blank" class="btn btn--secondary" href="#">Ver Código</a>
+          <a target="_blank" class="btn" href="#">Ver Proyectos</a>
+        </div>
+      </div>
+
+      <section class="card">
+        <img src="./images/leonidas.png" alt="" />
+        <p>
+          "Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de
+          desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5
+          meses ".
+        </p>
+        <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
+      </section>
+
+      <form action="" method="GET" class="form">
+        <div class="form__content">
+          <h2 class="form__title title">Hablemos</h2>
+          <p>
+            Si está interesado en trabajar conmigo en su próximo proyecto, no
+            dude en ponerse en contacto conmigo.
+          </p>
+          <label class="form__name" for="form-name">
+            Nombre Completo
+            <input
+              class="form__input"
+              require
+              name="name"
+              id="form-name"
+              type="text"
+              placeholder="Walter"
+            />
+          </label>
+          <label class="form__name" for="form-name">
+            Correo electrónico
+            <input
+              class="form__input"
+              require
+              name="email"
+              id="form-name"
+              type="email"
+              placeholder="Walter"
+            />
+          </label>
+          <label class="form__name" for="form-name">
+            Mensaje
+            <textarea
+              class="form__message"
+              placeholder="mensaje"
+              name="message"
+              id="form-message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <button class="btn" type="submit">Enviar mensaje</button>
+        </div>
+      </form>
+
+      <footer class="footer" id="contact">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img src="./images/logo.png" width="67" height="20" alt="logo" />
+          </div>
+          <div class="footer__social social">
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-phone.svg" alt="" />
+            </a>
+
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-mail.svg" alt="" />
+            </a>
+
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-instagram.svg" alt="" />
+            </a>
+
+            <a href="tel:924133488" class="icon">
+              <img src="./icons/icon-twitter.svg" alt="" />
+            </a>
+          </div>
+          <div class="footer__copyright">
+            <p>Hecho con el 💔 por Kuato.</p>
+            <p>Copyright 2023 - Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
